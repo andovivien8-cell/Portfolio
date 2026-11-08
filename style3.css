@@ -1,0 +1,260 @@
+#container {
+    background-color: #fffafc;
+    border-color:  #e7c1d9;
+    border-style: solid;
+    border-width: 4px;
+    height: 930px;
+    width: 655px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+body{
+    background-color: rgb(238, 219, 235);
+}
+
+/* Top header with title. Basically the whole thing is a picture */
+#header {
+    display: block;
+    background:  #fff5fb;
+    border: 1px solid #f0bcd4;
+    border-radius: 20px;
+    padding: 6px;
+    height: 100px;
+    margin: 7px;
+    
+    
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: 180px 1fr 200px;
+    gap: 10px;
+    padding: 10px;
+    display: grid;
+    
+}
+
+.box{
+    background: #fff;
+    border: 2px solid #f0bcd4;
+    border-radius: 12px;
+    padding: 10px;
+    height: 320px;
+    width: 130px;
+    margin-top: 10px;
+}
+
+.box h3{
+    margin-top: 0;
+    font-size: 13px;
+    text-align: center;
+    color: #d46aa3;
+}
+
+.nav a {
+    display: block;
+    background: #fff5fb;
+    border: 1px solid #f0bcd4;
+    border-radius: 20px;
+    padding: 6px;
+    margin: 6px 0;
+    text-decoration: none;
+    color: #b45b8f;
+    text-align: center;
+    width: 120px;
+}
+
+.nav a hover{
+    background: #ffe4f1;
+}
+
+#top_middle {
+    display: block;
+    background: #fff;
+    margin: 6px 0;
+    text-decoration: none;
+    color: #b45b8f;
+    text-align: center;
+    width: 281px;
+    height: 250px;
+    margin-left: 175px;
+    position: relative;
+    top: -358px;
+    border: 2px solid #f0bcd4;
+    border-radius: 12px;
+    padding: 10px;
+    
+}
+
+
+#top_right {
+    display: block;
+    background: #fff;
+    margin: 6px 0;
+    text-decoration: none;
+    color: #b45b8f;
+    text-align: center;
+    width: 130px;
+    height: 250px;
+    margin-left: 534px;
+    position: relative;
+    top: -791px;
+    border: 2px solid #f0bcd4;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+#bottom_left {
+    display: block;
+    background: #fff;
+    margin: 6px 0;
+    text-decoration: none;
+    color: #b45b8f;
+    text-align: center;
+    width: 130px;
+    height: 320px;
+    margin-left: 55px;
+    position: relative;
+    top: -700px;
+    border: 2px solid #f0bcd4;
+    border-radius: 12px;
+    padding: 10px;
+
+    
+}
+
+#animation {
+        display: block;
+    background: #fff;
+    margin: 6px 0;
+    text-decoration: none;
+    color: #b45b8f;
+    text-align: center;
+    width: 280px;
+    height: 60px;
+    margin-left: 220px;
+    position: relative;
+    top: -1128px;
+    border: 2px solid #f0bcd4;
+    border-radius: 12px;
+    padding: 10px
+    
+}
+
+#center {
+     display: block;
+    background: #fff;
+    margin: 6px 0;
+    text-decoration: none;
+    color: #b45b8f;
+    text-align: center;
+    width: 280px;
+    height: 175px;
+    margin-left: 220px;
+    position: relative;
+    top: -1120px;
+    border: 2px solid #f0bcd4;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+#right {
+     display: block;
+    background: #fff;
+    margin: 6px 0;
+    text-decoration: none;
+    color: #b45b8f;
+    text-align: center;
+    width: 130px;
+    height: 150px;
+    margin-left: 72%;
+    position: relative;
+    top: -1420px;
+    border: 2px solid #f0bcd4;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+#animation2 {
+     display: block;
+    background: #fff;
+    margin: 6px 0;
+    text-decoration: none;
+    color: #b45b8f;
+    text-align: center;
+    width: 140px;
+    height: 50px;
+    margin-left: 108%;
+    position: relative;
+    top:-150%;
+    border: 2px solid #f0bcd4;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+#bottom {
+       display: block;
+    background: #fff;
+    margin: 6px 0;
+    text-decoration: none;
+    color: #b45b8f;
+    text-align: center;
+    width: 280px;
+    height: 115px;
+    margin-left: -321px;
+    border: 2px solid #f0bcd4;
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 108px;
+}
+
+#bottom_right {
+     display: block;
+    background: #fff;
+    margin: 6px 0;
+    text-decoration: none;
+    color: #b45b8f;
+    text-align: center;
+    width: 140px;
+    height: 150px;
+    margin-left: -8%;
+    margin-top: -130%;
+    border: 2px solid #f0bcd4;
+    border-radius: 12px;
+    padding: 10px;
+
+}
+
+/* making everything tidy */
+
+@media only screen and (max-width: 1100px) {
+    #wrapper{
+        width:100%;
+    }
+    
+    main{
+        float:left;
+        width:100%;
+    }
+    
+    aside{
+        float:right;
+        width: 33%;
+        margin-top:50px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    section{
+        width:100%;
+        float:none;
+    }
+}
+    
+    aside{
+        float:none;
+        width: 100%;
+    }

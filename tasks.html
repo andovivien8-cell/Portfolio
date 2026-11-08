@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="style02.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="container">
+            <div id="header"></div>
+            <div class="content">
+            <aside class="nav box">
+                <h3>Navigation</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="tasks.html">UI/UX</a>
+                <a href="branding.html">Branding</a>
+                <a href="magazines.html">Print design</a>
+                <a href="illustrations.html">Illustrations</a>
+                <a href="links.html">Links</a>
+                <a href="process.html">Planning</a>
+            </aside>
+            
+             <!-- Dark Mode Toggle -->
+<button id="themeToggle">🌙 Dark Mode</button>
+
+<script>
+            /* ================= DARK MODE ================= */
+const toggle = document.getElementById("themeToggle");
+
+toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+        toggle.textContent = "☀ Light Mode";
+    } else {
+        toggle.textContent = "🌙 Dark Mode";
+    }
+});
+
+const right = document.getElementById("right");
+const popup = document.getElementById("popup");
+const close = document.getElementById("close");
+
+right.addEventListener("click", () => {
+    popup.classList.add("show");
+});
+
+close.addEventListener("click", () => {
+    popup.classList.remove("show");
+});
+        </script>
+</body>
+</html>

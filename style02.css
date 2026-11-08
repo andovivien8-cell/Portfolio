@@ -1,0 +1,161 @@
+#container {
+    background-color: #fffafc;
+    border-color:  #e7c1d9;
+    border-style: solid;
+    border-width: 4px;
+    height: 912px;
+    width: 662px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+body{
+    background-color: rgb(238, 219, 235);
+}
+
+/* Top header with title. Basically the whole thing is a picture */
+#header {
+    display: block;
+    background:  #fff5fb;
+    border: 1px solid #f0bcd4;
+    border-radius: 20px;
+    padding: 6px;
+    height: 100px;
+    margin: 7px;
+    
+    
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: 180px 1fr 200px;
+    gap: 10px;
+    padding: 10px;
+    
+}
+
+/* Dark Mode */
+body.dark {
+    background: #121212;
+    color: #f5f5f5;
+}
+
+body.dark #container {
+    background: #121212;
+    border-color: #5a5f8c;
+}
+
+body.dark .box {
+    background: #121212;
+    border-color: #5a5f8c;;
+    color: #f5f5f5;
+}
+
+body.dark :is(#header, #top_middle, #top_right, #bottom_left, #animation, #center, #right, #animation2, #bottom, #bottom_right) {
+    background: #121212;
+    border-color: #5a5f8c;
+}
+
+body.dark .nav a {
+    background: #121212;
+    border-color: #5a5f8c;
+    color: #b45b8f;
+}
+
+
+#themeToggle {
+    height: 40px;
+    width: 100px;
+    border-radius: 2px;
+    cursor: pointer;
+    transform: translate(-80px, -750px);
+    color: #b45b8f;
+    background: #fff;
+    border: 2px solid #f0bcd4;
+}
+
+.box{
+    background: #fff;
+    border: 2px solid #f0bcd4;
+    border-radius: 12px;
+    padding: 10px;
+    height: 320px;
+    width: 130px;
+    margin-top: 10px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.box h3{
+    margin-top: 0;
+    font-size: 13px;
+    text-align: center;
+    color: #d46aa3;
+}
+
+.nav a {
+    display: block;
+    background: #fff5fb;
+    border: 1px solid #f0bcd4;
+    border-radius: 20px;
+    padding: 6px;
+    margin: 6px 0;
+    text-decoration: none;
+    color: #b45b8f;
+    text-align: center;
+    width: 120px;
+    
+}
+
+.nav a:hover{
+    background: #ffe7f3;
+}
+
+@media (max-width: 800px) {
+    .content {
+        grid-template-columns: 1fr;      /* one column instead of three */
+    }
+    #container,
+    .content {
+    height: auto !important;   /* grow with the content instead of a fixed height */
+}
+
+    .content > * {
+        grid-column: auto !important;    /* undo the fixed column/row positions */
+        grid-row: auto !important;
+        transform: none !important;      /* undo the translate() nudges */
+        width: 100% !important;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+     .nav a {
+        width: 100%;
+        max-width: 300px;
+        margin: 8px auto;      /* auto on the sides centers the button */
+        padding: 10px;         /* taller, easier to tap with a thumb */
+        box-sizing: border-box;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .modal-content {
+        width: 90%;
+        height: auto;
+        max-height: 85vh;
+        overflow-y: auto;
+        margin: 5% auto;
+        flex-direction: column;          /* picture goes below the text */
+        box-sizing: border-box;
+    }
+
+    .modal-content img {
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+        align-self: center;
+    }
+}
